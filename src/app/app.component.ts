@@ -6,15 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'System Design';
+  title = 'Shilpa Sinha';
   
-  friendslist = [
-    {
-      name: 'Nishant',
-      age: 25
-    },
-    {
-      name: 'Shailesh',
-      age: 45
-    }]
+  // friendslist = [
+  //   {
+  //     name: 'Nishant',
+  //     age: 25
+  //   },
+  //   {
+  //     name: 'Shailesh',
+  //     age: 45
+  //   }]
 }
