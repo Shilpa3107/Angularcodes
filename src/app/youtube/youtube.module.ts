@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { UserloginComponent } from './userlogin/userlogin.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    UserloginComponent
+  ],
   imports: [
     CommonModule
   ]
