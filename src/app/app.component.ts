@@ -6,15 +6,20 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Shilpa Sinha';
+  // userLoggedIn: boolean = !false;
+  cars: Array<string> = ["bmw","audi","lexus","tesla"];
+  title = 'I am great';
 
-  constructor(){
-    console.log("You are in component.ts");
+  btnclick(){
+    prompt("Here it is working perfect");
   }
-  @HostListener('click',['$event'])
-  onhostclick(event:Event){
-    alert("This is listening your event");
-  }
+  //constructor(){}
+  //   console.log("You are in component.ts");
+  // }
+  // @HostListener('click',['$event'])
+  // onhostclick(event:Event){
+  //   alert("This is listening your event");
+  // }
   
   // friendslist = [
   //   {
