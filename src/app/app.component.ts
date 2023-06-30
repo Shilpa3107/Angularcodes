@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Shilpa Sinha';
 
-  constructor(){}
+  constructor(){
+    console.log("You are in component.ts");
+  }
+  @HostListener('click',['$event'])
+  onhostclick(event:Event){
+    alert("This is listening your event");
+  }
   
   // friendslist = [
   //   {
@@ -20,3 +26,5 @@ export class AppComponent {
   //     age: 45
   //   }]
 }
+
+
