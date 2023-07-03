@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { Car } from './car';
 
 @Component({
   selector: 'app-root',
@@ -6,8 +7,14 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+   cars: Array<Car>=[
+    {name:"bmw",color:"red",speed:200},
+    {name:"audi",color:"blue",speed:300},
+    {name:"lexus",color:"white",speed:100}
+   ];
   // userLoggedIn: boolean = !false;
-  cars: Array<string> = ["bmw","audi","lexus","tesla"];
+  // cars: Array<string> = ["bmw","audi","lexus","tesla"];
   title = 'I am great';
 
   btnclick(){

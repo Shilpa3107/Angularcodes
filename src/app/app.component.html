@@ -6,6 +6,14 @@
 <br>
 <!-- <button *ngIf ="!userLoggedIn">Login</button>
 <button *ngIf = "userLoggedIn">Logout</button> -->
-<ul>
-    <li *ngFor = "let car of cars">{{car}}</li>
-</ul>
+<!-- <ul>
+    <li *ngFor = "let car of cars">
+        {{car}}
+
+    </li>
+</ul> -->
+<div *ngFor="let car of cars">
+    <h2>{{car.name}}</h2>
+    <p>{{car.color}}</p>
+    <p>{{car.speed}}</p>
+</div>
