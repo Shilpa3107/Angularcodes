@@ -10,7 +10,7 @@
 </head>
 <body>
   
-  <header>
+  <!-- <header>
     <nav class="navbar">
       <a href="#" class = "nav-branding">DEV.</a>
       <ul class ="nav-menu">
@@ -43,9 +43,43 @@ hamburger.addEventListener("click", () =>{
     navMenu.classList.toggle("active");
 })
 console.log("hello");
-   </script>
+   </script> -->
 
+<div class ="app">
+  <aside class="sidebar">
+    <h2>MENU</h2>
+    <nav class = "menu">
+      <a href="#" class ="menu-item is-active">HOME</a>
+      <a href="#" class ="menu-item">ABOUT</a>
+      <a href="#" class ="menu-item">CONTACT</a>
+      
+    </nav>
+  </aside>
+  <main class="content">
+    <div class="hamburger-container">
+      <div class="menu-toggle">
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </div>
+      
+    <h1>Welcome</h1>
+    <p>I love BTS' songs and Stray Kids' songs</p>
+
+  </main>
+</div>
   <app-root></app-root>
-  
+  <script>
+  const menu_toggle = document.querySelector(".menu-toggle");
+  const sidebar = document.querySelector(".sidebar");
+
+  menu_toggle.addEventListener("click",() =>{
+    menu_toggle.classList.toggle("is-active");
+    sidebar.classList.toggle("is-active");
+  })
+</script>
 </body>
 </html>
